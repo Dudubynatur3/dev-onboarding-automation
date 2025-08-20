@@ -108,37 +108,45 @@ Advanced Linux User Management + Terraform Automation for Startup Scale
 
 ### 🎬 Complete Workflow Demonstration
 
-#### 1. Terraform Deployment Success
-![Terraform Apply](screenshots/terraform-apply.png)
-*One command deploys entire infrastructure with zero manual intervention*
+#### 1. Terraform Infrastructure Planning
+![Terraform Plan](terra%20plan.PNG)
+*Terraform shows planned infrastructure changes before deployment*
 
-#### 2. AWS EC2 Console
-![AWS Console](screenshots/aws-console.png)
-*EC2 instance automatically provisioned with proper security groups*
+#### 2. Terraform Infrastructure Deployment
+![Terraform Plan 2](terra%20plan2.PNG)
+*Secondary terraform planning phase with resource details*
 
-#### 3. SSH Connection Established
-![SSH Connection](screenshots/ssh-connection.png)
-*Secure SSH access configured automatically with key-based authentication*
+#### 3. Terraform Initialization Complete
+![Terraform Init](terraform%20init.PNG)
+*Terraform successfully initializes and downloads required providers*
 
-#### 4. Bootstrap Script Execution
-![Bootstrap Execution](screenshots/bootstrap-execution.png)
-*Main orchestration script executing user creation and environment setup*
+#### 4. AWS EC2 Instance Running
+![AWS Instance](AWS%20instance.PNG)
+*EC2 instance automatically provisioned and running in AWS console*
 
-#### 5. User Creation Verification
-![User Creation](screenshots/user-creation.png)
-*Multiple developer accounts created with proper permissions and group memberships*
+#### 5. SSH Login Success
+![SSH Login](ssh%20login%20sucess.PNG)
+*Secure SSH connection established to the provisioned EC2 instance*
 
-#### 6. Advanced Permissions Verification
-![Permissions Verification](screenshots/permissions-verification.png)
-*Complex file permissions and ACLs properly configured for team collaboration*
+#### 6. SSH and SCP Operations
+![SSH and SCP](ssh%20and%20scp.PNG)
+*File transfer and SSH operations working correctly*
 
-#### 7. System Security Audit Report
-![Audit Report](screenshots/audit-report.png)
-*Automated compliance checking with detailed security validation*
+#### 7. User Creation with useradd
+![User Creation](useradd.PNG)
+*Multiple developer accounts created using advanced useradd commands*
 
-#### 8. Project Structure Overview
-![Directory Structure](screenshots/directory-structure.png)
-*Clean, organized codebase with separation of concerns*
+#### 8. File Permissions Management
+![File Permissions](file%20permissions.PNG)
+*Complex file permissions and ownership properly configured*
+
+#### 9. Advanced chmod Operations
+![Chmod Operations](chmod.PNG)
+*Advanced permission management with chmod for security compliance*
+
+#### 10. Security Audit Execution
+![Audit Script](audit%20sh%20running.PNG)
+*Automated security audit script running comprehensive system checks*
 
 ---
 
@@ -341,11 +349,11 @@ Hi! I'm passionate about combining **Infrastructure as Code** with **advanced Li
 
 - **GitHub**: [@Dudubynatur3](https://github.com/Dudubynatur3)
 - **LinkedIn**: [Connect with me](https://www.linkedin.com/in/akintade-aduroja)
-  
+
 
 ---
 
 <div align="center">
   <h3>⭐ Star this repo if it helped you automate developer onboarding! ⭐</h3>
-  <p>Created as part of my Linux command project deployments series</p>
+  <p>Made with ❤️ for the DevOps community</p>
 </div>
