@@ -355,5 +355,5 @@ Hi! I'm passionate about combining **Infrastructure as Code** with **advanced Li
 
 <div align="center">
   <h3>⭐ Star this repo if it helped you automate developer onboarding! ⭐</h3>
-  <p>Made with ❤️ for the DevOps community</p>
+  
 </div>
