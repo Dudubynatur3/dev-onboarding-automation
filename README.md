@@ -1,5 +1,5 @@
-****                    Startup Developer Onboarding Automation**
-This project automates the process of onboarding new developers on Linux servers hosted on AWS.
+                       Startup Developer Onboarding Automation
+This project automates onboarding new developers on Linux servers hosted on AWS.
 Instead of manually creating users, groups, and permissions, this tool uses a config-driven approach to:
 
 ✅ Create users automatically
