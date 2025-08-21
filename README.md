@@ -7,6 +7,8 @@ Advanced Linux User Management + Terraform Automation for Startup Scale
 [![AWS](https://img.shields.io/badge/AWS-EC2-FF9900?logo=amazonaws&logoColor=white)](https://aws.amazon.com)
 [![Linux](https://img.shields.io/badge/Linux-System%20Admin-FCC624?logo=linux&logoColor=black)](https://linux.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
+[![Infrastructure](https://img.shields.io/badge/Infrastructure-as%20Code-FF6B6B?logo=terraform&logoColor=white)](https://terraform.io)
 
 ---
 
@@ -150,6 +152,26 @@ Advanced Linux User Management + Terraform Automation for Startup Scale
 
 ---
 
+## 🚀 Terraform Configuration
+
+This project includes **modular Terraform scripts** to provision AWS infrastructure for the onboarding automation project.
+
+### 🔗 Quick Links to Terraform Files:
+- [`main.tf`](terraform/main.tf) → Defines the EC2 instance and bootstrapping logic
+- [`variables.tf`](terraform/variables.tf) → Holds configurable variables for flexible deployments  
+- [`outputs.tf`](terraform/outputs.tf) → Outputs key information like instance public IP
+- [`provider.tf`](terraform/provider.tf) → Configures AWS provider and authentication
+
+### ⚡ Infrastructure Deployment
+
+You can run these with:
+
+```bash
+cd terraform
+terraform init
+terraform apply -auto-approve
+```
+
 ## 🚀 Quick Start
 
 ### Option 1: Fully Automated Deployment
@@ -196,7 +218,8 @@ dev-onboarding-automation/
 ├── terraform/
 │   ├── main.tf                 # Complete IaC configuration
 │   ├── variables.tf            # Customizable variables
-│   └── outputs.tf              # Connection information
+│   ├── outputs.tf              # Connection information
+│   └── provider.tf             # AWS provider configuration
 ├── scripts/
 │   ├── create_users.sh         # Advanced user creation
 │   ├── audit.sh                # Security compliance auditing
@@ -355,5 +378,5 @@ Hi! I'm passionate about combining **Infrastructure as Code** with **advanced Li
 
 <div align="center">
   <h3>⭐ Star this repo if it helped you automate developer onboarding! ⭐</h3>
-  
+  <p>Made with ❤️ for the DevOps community</p>
 </div>
