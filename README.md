@@ -157,17 +157,17 @@ Advanced Linux User Management + Terraform Automation for Startup Scale
 This project includes **modular Terraform scripts** to provision AWS infrastructure for the onboarding automation project.
 
 ### 🔗 Quick Links to Terraform Files:
-- [`main.tf`](terraform/main.tf) → Defines the EC2 instance and bootstrapping logic
-- [`variables.tf`](terraform/variables.tf) → Holds configurable variables for flexible deployments  
-- [`outputs.tf`](terraform/outputs.tf) → Outputs key information like instance public IP
-- [`provider.tf`](terraform/provider.tf) → Configures AWS provider and authentication
+- [`main.tf`](main.tf) → Defines the EC2 instance and bootstrapping logic
+- [`variables.tf`](variables.tf) → Holds configurable variables for flexible deployments  
+- [`outputs.tf`](outputs.tf) → Outputs key information like instance public IP
+- [`provider.tf`](provider.tf) → Configures AWS provider and authentication
 
 ### ⚡ Infrastructure Deployment
 
 You can run these with:
 
 ```bash
-cd terraform
+cd dev-onboarding-automation
 terraform init
 terraform apply -auto-approve
 ```
@@ -198,10 +198,9 @@ aws configure
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/startup_onboarding
 
 # 3. Update Terraform variables
-vim terraform/main.tf
+vim main.tf
 
 # 4. Deploy infrastructure
-cd terraform
 terraform apply
 
 # 5. Verify user creation
@@ -215,11 +214,10 @@ sudo cat /etc/passwd | tail -10
 
 ```
 dev-onboarding-automation/
-├── terraform/
-│   ├── main.tf                 # Complete IaC configuration
-│   ├── variables.tf            # Customizable variables
-│   ├── outputs.tf              # Connection information
-│   └── provider.tf             # AWS provider configuration
+├── main.tf                     # Complete IaC configuration
+├── variables.tf                # Customizable variables
+├── outputs.tf                  # Connection information
+├── provider.tf                 # AWS provider configuration
 ├── scripts/
 │   ├── create_users.sh         # Advanced user creation
 │   ├── audit.sh                # Security compliance auditing
@@ -378,5 +376,5 @@ Hi! I'm passionate about combining **Infrastructure as Code** with **advanced Li
 
 <div align="center">
   <h3>⭐ Star this repo if it helped you automate developer onboarding! ⭐</h3>
-  
+
 </div>
