@@ -1,22 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-validate_name() {
-  local name="$1"
+TMP_FILE="$(mktemp)"
 
-  if [ -z "$name" ]; then
-    echo "ERROR: name cannot be empty" >&2
-    return 1
-  fi
+cleanup() {
+  rm -f "$TMP_FILE"
+  echo "Cleanup complete"
 }
 
-echo "Enter your name:"
-read USER_NAME
+trap cleanup EXIT
 
-if validate_name "$USER_NAME"; then
-  echo "Validation succeeded"
-else
-  echo "Validation failed but handled safely"
-fi
+perform_task() {
+  echo "Performing task..."
+  false
+}
 
-echo "Script completed"
+perform_task
+
+echo "Task completed"
